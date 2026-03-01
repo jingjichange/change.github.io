@@ -23,7 +23,7 @@
 
 /* ===== 只覆盖链接颜色为黑色，其余保持原样 ===== */
 .links a {
-    color: #000000 !important;
+    color: #FFFFFF !important;
 }
 
 .links a:hover,
