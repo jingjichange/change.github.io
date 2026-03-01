@@ -4,16 +4,21 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main_min.css">
+    <link rel="stylesheet" href="css/video-bg.css">
     <title> hello change </title>
 </head>
 
 
-<body>   <!--这是一个注释，background="screenshots/OrangeRed.jpeg"注释在浏览器中不会显示-->
+<body>
+    <!-- 视频背景 -->
+    <div class="video-bg-wrapper">
+        <video autoplay muted loop playsinline class="video-bg">
+            <source src="assets/videos/background.mp4" type="video/mp4">
+        </video>
+        <div class="video-overlay"></div>
+    </div>
+
     <div class="container">
-        <div class="search">
-            <input class="search-box" type="textbox" placeholder="Hi Research" autofocus>
-            <div class="search-clear">×</div>
-        </div>
 
         <div class="clock">
             <div class="time">00:00</div>
