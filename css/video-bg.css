@@ -1,107 +1,35 @@
 .video-bg-wrapper {
     position: fixed;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     z-index: -1;
     overflow: hidden;
 }
 
+/* 视频：居中裁剪铺满 */
 .video-bg {
     position: absolute;
-    top: 50%; left: 50%;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
-    min-width: 100%; min-height: 100%;
-    width: auto; height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
     object-fit: cover;
 }
 
-/* 遮罩加深，提升整体可读性 */
+/* 遮罩：让上层文字更清晰，数字越大越暗 */
 .video-overlay {
     position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.45);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.38);
 }
-
-/* ===== 时钟字体加强 ===== */
-.time {
-    font-size: 80px !important;
-    font-weight: 700 !important;
-    color: #ffffff !important;
-    text-shadow: 0 2px 16px rgba(0,0,0,0.6) !important;
-    letter-spacing: 2px;
-}
-
-.date {
-    color: rgba(255,255,255,0.92) !important;
-    font-size: 18px !important;
-    text-shadow: 0 1px 8px rgba(0,0,0,0.5) !important;
-    letter-spacing: 3px;
-}
-
-/* ===== 导航Tab（All in AI / Research / Notes）===== */
-.buttons-container {
-    background: rgba(0, 0, 0, 0.30) !important;
-    backdrop-filter: blur(10px) !important;
-    border-radius: 30px !important;
-    padding: 4px 8px !important;
-    border: 1px solid rgba(255,255,255,0.15) !important;
-}
-
-/* ===== 每个分类板块加半透明卡片背景 ===== */
-.part {
-    background: rgba(0, 0, 0, 0.42) !important;
-    backdrop-filter: blur(12px) !important;
-    border-radius: 14px !important;
-    padding: 18px 16px !important;
-    border: 1px solid rgba(255, 255, 255, 0.12) !important;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.25) !important;
-}
-
-/* ===== 分类标题（大模型、AI视音等）===== */
-.part h1 {
-    color: #ffffff !important;
-    font-size: 18px !important;
-    font-weight: 700 !important;
-    text-shadow: 0 1px 6px rgba(0,0,0,0.4) !important;
-    margin-bottom: 12px !important;
-    padding-bottom: 8px !important;
-    border-bottom: 1px solid rgba(255,255,255,0.2) !important;
-}
-
-/* ===== 链接文字 ===== */
-.links a {
-    color: rgba(255, 255, 255, 0.88) !important;
-    text-shadow: 0 1px 4px rgba(0,0,0,0.4) !important;
-    font-size: 14px !important;
-    transition: all 0.2s ease !important;
-    display: block;
-    padding: 2px 0;
-}
-
-.links a:hover {
-    color: #ffd580 !important;        /* 悬停变金黄色，与视频暖色调搭配 */
-    text-shadow: 0 0 10px rgba(255, 210, 100, 0.6) !important;
-    transform: translateX(4px);
-    text-decoration: none !important;
-}
-
-/* ===== 搜索框 ===== */
-.search-box {
-    background: rgba(255, 255, 255, 0.18) !important;
-    backdrop-filter: blur(12px) !important;
-    border: 1.5px solid rgba(255,255,255,0.35) !important;
-    color: #ffffff !important;
-    border-radius: 30px !important;
-    padding: 10px 20px !important;
-    font-size: 15px !important;
-}
-
-.search-box::placeholder {
-    color: rgba(255, 255, 255, 0.55) !important;
-}
-
-.search-box:focus {
-    border-color: rgba(255,255,255,0.7) !important;
-    background: rgba(255,255,255,0.22) !important;
-    outline: none !important;
+* {
+    color: #000000 !important;
 }
