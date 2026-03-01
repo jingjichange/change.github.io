@@ -1,35 +1,32 @@
 .video-bg-wrapper {
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
     z-index: -1;
     overflow: hidden;
 }
 
-/* 视频：居中裁剪铺满 */
 .video-bg {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 50%; left: 50%;
     transform: translate(-50%, -50%);
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
+    min-width: 100%; min-height: 100%;
+    width: auto; height: auto;
     object-fit: cover;
 }
 
-/* 遮罩：让上层文字更清晰，数字越大越暗 */
 .video-overlay {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    inset: 0;
     background: rgba(0, 0, 0, 0.38);
 }
-* {
+
+/* ===== 只覆盖链接颜色为黑色，其余保持原样 ===== */
+.links a {
     color: #000000 !important;
+}
+
+.links a:hover,
+.links a:focus {
+    color: #333333 !important;
 }
